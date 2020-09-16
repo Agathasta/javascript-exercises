@@ -1,18 +1,9 @@
-const books = [
-    {
-        title: 'Book',
-        author: 'Name'
-    },
-    {
-        title: 'Book2',
-        author: 'Name2'
-    }
-]
 
-const getTheTitles = function () {
+
+const getTheTitles = function (array) {
     let titles = []
-    for (i = 0; i < books.length; i++) {
-        titles.push(books[i].title);
+    for (i = 0; i < array.length; i++) {
+        titles.push(array[i].title);
     }
     return titles;
 }
